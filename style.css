@@ -1,0 +1,18 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+div.container{
+    width: 80%;
+    min-height: 800px;
+    background-color: alicebdlue;
+    border-radius: 10px;
+    border: solid 1px gray;
+}
+div.payment{
+    background-color: rgb(242, 247, 246);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
