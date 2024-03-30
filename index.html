@@ -12,73 +12,163 @@
     <title>Hello, world!</title>
   </head>
   <body>
-    <div class="container mt-4 rounded-3">
+    
+ 
+    <div class=" containe-pricipal">
+      <div class="card--success ">
+        <h2 class="mx-3">Payment form Cart</h2>
+      </div>
+      
+      <div class="containert mt-4 rounded-3">
         <div class="row align-items-start">
-          <div class="col-12 py-1 border-bottom payment">
-            <h2>Payment form Cart</h2>
-          </div>
-
+      
           <form class="container  p-4">
-            <div class="bg-primary rounded-2">
-                <p class="py-2 px-3 ">Some fields are missing</p>
+            <div class="rounded-2 warning  ">
+              <p class="py-2 px-3 ">Some fields are missing</p>
             </div>
             <div class="">
-                <div class="row align-items-start">
-                  <div class="col-6">
-                    <label for="card">Card #</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="row align-items-start">
+                    <div class="col-6">
+                      <label for="card">Card #</label>
+                      <input type="number" class="form-control" aria-describedby="number" placeholder="XXXXXXXXXXXXXXXX">
+                    </div>
+                    <div class="col-2">
+                      <label for="cvc">CVC #</label>
+                      <input type="number" class="form-control" aria-describedby="cvc" placeholder="0000">
+                    </div>
+                    <div class="col-4">
+                      <label for="amount">Amount</label>
+                      <input type="number" class="form-control" aria-describedby="amount" placeholder="$ Amount">
+                    </div>
                   </div>
-                  <div class="col-2">
-                    <label for="cvc">CVC #</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="row align-items-start mt-2">
+                    <div class="col-7">
+                      <label for="name">First Name</label>
+                      <input type="text" class="form-control"  aria-describedby="name" placeholder="Name">
+                    </div>
+                    <div class="col-5">
+                      <label for="last name">Last Name</label>
+                      <input type="text" class="form-control"  aria-describedby="lastname" placeholder="Last Name">
+                    </div>
                   </div>
-                  <div class="col-4">
-                    <label for="amount">Amount</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div class="row align-items-start mt-2">
+                    <div class="col-7">
+                      <label for="name">City</label>
+                      <input type="text" class="form-control" aria-describedby="city" placeholder="City">
+                    </div>
+                    
+                    
+                    <div class="col-2">
+                      <label for="state">State</label>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Pick a state</option>
+                        <option value="alabama">Alabama</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="arizona">Arizona</option>
+                        <option value="arkansas">Arkansas</option>
+                        <option value="califonia">Califonia</option>
+                        <option value="colorado">Colorado/option>
+                          <option value="connecticut">Connecticut</option>
+                          <option value="delaware">Delaware</option>
+                          <option value="florida">Florida</option>
+                          <option value="georgia">Georgia</option>
+                        <option value="hawaii">Hawaii</option>
+                        <option value="idaho">Idaho</option>
+                        <option value="indiana">Indiana</option>
+                        <option value="iowa">Iowa</option>
+                        <option value="kansas">Kansas</option>
+                        <option value="maine">Maine</option>
+                        <option value="maryland">Maryland</option>
+                        <option value="massachusetts">Massachusetts</option>
+                        <option value="michigan">Michigan</option>
+                        <option value="minnesota">Minnesota</option>
+                        <option value="mississippi">Mississippi</option>
+                      </select>
+                    </div>
+                    
+                    <div class="col-3">
+                      <label for="last name">Postal Code</label>
+                      <input type="number" class="form-control"  aria-describedby="zipecode" placeholder="Zipe code">
+                    </div>
+                  </div>
+                  
+                  <div class="row align-items-start mt-2">
+                    <div class="col-4 py-2">                
+                      <label for="type cart" class="form-label">We accept:</label>
+                      <div class="w-100 bg-primary d-flex justify-content-around py-2 mt-2 rounded-2">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                          <label class="form-check-label" for="exampleRadios1">
+                            <i class="fa-brands fa-cc-mastercard"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                            <i class="fa-brands fa-cc-visa"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                            <i class="fa-brands fa-cc-diners-club"></i>
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                          <label class="form-check-label" for="exampleRadios2">
+                            <i class="fa-brands fa-cc-paypal"></i>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-3">                  
+                    </div>
+                    <div class="col-5">
+                      <label for="message" class="py-2">Message</label>
+                      <textarea name="message" id="message" cols="30" rows="3" class="w-100" placeholder="Your message here..."></textarea>
+                      <label for="notes" class="fst-italic notes ">Add any notes here.</label>
+                    </div>
                   </div>
                 </div>
-                <div class="row align-items-start mt-2">
-                  <div class="col-7">
-                    <label for="name">First Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-5">
-                    <label for="last name">Last Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                </div>
-                <div class="row align-items-start mt-2">
-                  <div class="col-7">
-                    <label for="name">City</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                  </div>
-                  <div class="col-5">
-                    <label for="last name">Postal Code</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              </form>
+              
+              
+            <div class="">
+         
+              <div class="col-12 py-1 border-top px-0 card--success py-2 d-flex  justify-content-end">
+                <button type="submit" class="btn btn-secondary">Cancel</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  Submit
+                </button>
+
+                <!-- Modal -->
+                <div class="modal " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header-success">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="fa-solid fa-circle-check payment-success"></i></h5>                        
+                      </div>
+                      <div class="modal-body">
+                        <p class="payment-message">
+                          Your Payment has been successfully <br>
+                          submited. <span>Thanks</span>
+                        </p>
+                      </div>
+                      <div class="modal-footefr">
+                        <button type="button" class="btn btn-success text-center" data-bs-dismiss="modal">Accept</button>
+                      </div>                        
+                    </div>
                   </div>
                 </div>
 
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label  d-block">Payment form example</label>
-        
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               
+              </div>
             </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-        </div>
-   
     </div>
-    
-
     <!-- Scripts JavasCript -->
+    <script src="https://kit.fontawesome.com/53e8cade12.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   </body>

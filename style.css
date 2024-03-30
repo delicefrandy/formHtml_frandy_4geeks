@@ -3,16 +3,69 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
-div.container{
+div.containe-pricipal{
     width: 80%;
-    min-height: 800px;
+    min-height: 540px;
     background-color: alicebdlue;
-    border-radius: 10px;
+    border-radius: 7px;
     border: solid 1px gray;
+    margin: 40px auto;
 }
-div.payment{
-    background-color: rgb(242, 247, 246);
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+div.card-header>h2{
+    margin: 0 auto;
+    background-color: #F7F7F7;  
+    
+}
 
+.warning{
+    background: #F8D7DA;
+    border-radius: 10px;
+    color: #721B22;
+}
+
+button.btn{
+    width: auto;
+    height: 35px;
+    text-align: center;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notes{
+    font-size: 11px;
+}
+
+.payment-success{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #69C444;
+    font-size: 250px;
+    margin: 0 auto;
+}
+
+.modal-title{
+    margin: 5px auto;
+}
+
+.modal-header-success{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.payment-message{
+    font-size: 20px;
+    font-weight: 200;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.modal-footefr{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
